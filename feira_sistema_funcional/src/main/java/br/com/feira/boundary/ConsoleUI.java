@@ -255,7 +255,34 @@ public class ConsoleUI {
         System.out.println("\n===== ENTREGA =====");
         System.out.println(endereco);
 
-        System.out.println("\nASSINATURA APROVADA");
-        System.out.println("PROTOCOLO: " + assinatura.getNumeroProtocolo());
+        System.out.println("\\n===== CONFIRMAÇÃO FINAL =====");
+
+        System.out.println(
+                "PROTOCOLO: "
+                + assinatura.getNumeroProtocolo()
+        );
+
+        System.out.println(
+                "PLANO: "
+                + plano.getNome()
+        );
+
+        System.out.println(
+                "VALOR TOTAL: R$ "
+                + plano.getPreco()
+        );
+
+        System.out.println(
+                "STATUS PAGAMENTO: APROVADO"
+        );
+
+        System.out.println(
+                "ENDEREÇO ENTREGA: "
+                + endereco
+        );
+
+        System.out.println(
+                "\\nASSINATURA APROVADA COM SUCESSO"
+        );
     }
 }
